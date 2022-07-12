@@ -2,11 +2,12 @@ const getResult =  function(a,b) {
     return a + b;
 }
 
-export const FirstApp = () => {
+export const FirstApp = ({title , subTitle}) => {
+
     return (
         <>
-            <h1>{ getResult(1,2) }</h1>
-            <p>Soy un subtitulo</p>
+            <h1>{ title }</h1>
+            <p>{ subTitle }</p>
         </>
     );
 }
